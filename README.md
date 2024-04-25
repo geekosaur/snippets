@@ -1,2 +1,1 @@
-# snippets
-stuff I want to hold on to
+This is just a collection point for things I've found useful.
