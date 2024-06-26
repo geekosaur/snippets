@@ -13,6 +13,7 @@ cxP() {
 	curl -x PURGE "$@"
 }
 
+# NB. the ~s will go away at some time in the future
 r="http://downloads.haskell.org/~cabal/cabal-install-"
 
 for v in "$ver" latest; do
