@@ -2,6 +2,13 @@
 
 ver="${1:?please specify a cabal-install release version}"
 
+if test -f "cabal-install-$ver.tar.gz"; then
+	:
+else
+	echo please run me from a directory containing local copies of release files
+	exit 1
+fi
+
 cxP() {
 	curl -x PURGE "$@"
 }
