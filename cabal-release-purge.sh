@@ -14,7 +14,8 @@ cxP() {
 }
 
 # NB. the ~s will go away at some time in the future
-r="http://downloads.haskell.org/~cabal/cabal-install-"
+r="http://downloads.haskell.org/cabal/cabal-install-"
+cxP "http://downloads.haskell.org/~cabal" || :
 
 for v in "$ver" latest; do
 	cxP "$r$v"
